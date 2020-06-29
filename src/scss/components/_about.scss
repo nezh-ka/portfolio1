@@ -1,0 +1,152 @@
+.introduce {
+    padding: 5rem 0;
+    background: $white-color;
+    text-align: center;
+
+    &__link,
+    &__link:link, 
+    &__link:active, 
+    &__link:hover {
+        color: $primary-color;
+    }
+
+    &__text-container {
+        margin: 0 6.6rem;
+        padding: 0 1.5rem;
+    }
+
+    &__heading {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.6rem;
+        color: $grey-dark1;
+        margin: 2rem 0 1rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        color: $grey-light1;
+        margin-bottom: 1rem;
+        line-height: 2.2rem;
+    }
+
+    @media (max-width: 768px) {
+        &__text-container {
+            margin: 0 $medium-gutter; 
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        &__text-container {
+            margin: 0 $small-gutter; 
+        }
+    }
+}
+
+.aboutMe {
+    background: $grey-light3;
+    padding: 6rem $big-gutter;
+
+    &__text-container {
+        margin: 0 1.5rem 3rem 1.5rem;
+        padding: .3rem 0 1.5rem;
+        text-align: center;
+    }
+
+    &__heading {
+        margin: 2rem 0 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        color: $grey-dark1;
+    }
+
+    &__paragraph {
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+        color: $grey-light1;
+    }
+
+    &__head {
+        padding: 2rem 1rem;
+        background: $white-color;
+        color: $grey-dark1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        fill: $grey-dark2;
+    }
+
+    &__heading-tertiary {
+        margin: 2rem 0 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 2.4rem;
+    }
+
+    &__description {
+        background: $grey-light2;
+        padding: 2rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        color: $grey-dark2;
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        padding: 3rem $medium-gutter; 
+    }
+
+    @media (max-width: 576px) {
+        padding: 3rem $small-gutter; 
+    }
+
+}
+
+.motivation {
+    background: url(../img/banner-bg.jpg) no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: $grey-light4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+
+    &__text {
+        background: rgba($color-black, .5);
+        margin: 0 $big-gutter;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__heading-secondary {
+        font-size: 3rem;
+    }
+
+    &__heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    @media (max-width: 768px) {
+        &__text {
+            margin: 0 $medium-gutter;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__text {
+            margin: 0 $small-gutter;
+        }
+    }
+
+}

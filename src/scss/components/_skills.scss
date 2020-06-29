@@ -1,0 +1,59 @@
+.skills {
+    padding: 0 1.5rem 6rem 1.5rem;
+    margin: 0 $big-gutter;
+
+    &__top {
+        margin: 0 0 3rem;
+        padding:  6rem 0;
+
+        h2 {
+            padding: .3rem 1rem 1.5rem;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: $grey-dark1;
+        }
+
+        p {
+            color: $grey-light1;
+            font-size: 1.7rem;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        padding: 0 1.5rem;
+        color: $grey-dark1;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-right: auto;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            margin: 0 $medium-gutter;
+        }
+    }
+
+    @media (max-width: 576px) {
+        & {
+            margin: 0 $small-gutter;
+        }
+    }
+}
+
+.progress {
+    width: 80%;
+    height: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.progress-bar {
+    background-color: $primary-color;
+}

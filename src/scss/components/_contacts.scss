@@ -1,0 +1,106 @@
+.contacts {
+    padding: 3rem $big-gutter;
+    background: $grey-light3;
+
+    h2 {
+        margin: 2rem 0 1rem;
+        color: $primary-color;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0 0 1rem;
+        font-size: 1.7rem;
+        color: $grey-light1;
+    }
+
+    .container {
+        margin-top: 3rem;
+        width: 70%;
+    }
+
+    .form-control, .btn {
+        border-radius: 5px !important;
+    }
+
+    .form-control {
+        padding: 6px 12px;
+        border: 1px solid $grey-light6;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+        }
+
+        &::placeholder {
+            font-size: 1.7rem;
+            color: $grey-dark3;
+        }
+    }
+
+    input.error, textarea.error {
+        border: 1px solid $primary-color;
+    }
+
+    label.error {
+        color: $primary-color;
+        font-size: 1.7rem;
+    }
+
+    .btn, .btn:active {
+        float: right !important;
+        font-size: 1.4rem;
+        background: $primary-color !important;
+        border: 0;
+    }
+
+    textarea {
+        resize: none;
+        overflow: auto;
+    }
+
+    &__message {
+        color: $primary-color;
+        font-size: 1.7rem;
+        display: none;
+    }
+
+    @media(max-width: 768px) {
+        padding: 3rem $medium-gutter;
+
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 3rem $small-gutter;
+    }
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 4.5rem 0;
+
+    a {
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+
+    svg {
+        padding: 0;
+        height: 3rem;
+        width: 3rem;
+        fill: $grey-dark3;
+
+        &:hover {
+            fill: $primary-color;
+        }
+    }
+}
