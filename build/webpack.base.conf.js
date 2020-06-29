@@ -1,7 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -70,10 +70,10 @@ module.exports = {
       filename: `${PATHS.assets}css/[name].css`,
     }),
     // Copy HtmlWebpackPlugin and change index.html for another html page
-    /* new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: `${PATHS.src}/index.html`,
       filename: './index.html',
-    }), */
+    }),
     new CopyWebpackPlugin({
         patterns: [
           { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
